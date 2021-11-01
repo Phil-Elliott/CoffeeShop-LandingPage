@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.body-container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-left {
+	display: flex;
+}
+
+i {
+	margin: auto;
+	padding-right: 1rem;
+}
+
+.nav-middle > ul {
+	display: flex;
+}
+
+.nav-middle > ul > li {
+	padding: 0 2rem;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-right {
+	display: flex;
+}
