@@ -1,5 +1,6 @@
 const active = document.querySelector('.active')
 const links = document.querySelectorAll('.link')
+const slider = document.querySelector('.slider'); 
 
 // highlights each nav link when clicked and removes highlight from previous nav link
 function activeNavLink() {
@@ -18,7 +19,6 @@ activeNavLink()
 
 // highlights each nav link when scrolling and removes highlight from previous nav link
 document.addEventListener('scroll',() => {
-	console.log(pageYOffset)
 	links.forEach((link) => {
 		link.classList.remove("active")
 	})
@@ -33,17 +33,16 @@ document.addEventListener('scroll',() => {
 	}
 })
 
+// Slider function for the 3rd header
+width = 0;
 
-
-
-/*document.addEventListener('scroll',() => {
-	for(let i = 0; i < 5; i++) {
-		if (pageYOffset >= (i * 680)) {
-			links.forEach((link) => {
-				link.classList.remove("active")
-			})
-			links[i].classList.add("active")
-		}
+const moveRight = () => {
+	if (width < -200) {
+		width = 0;
+	} else if (width >= -200) {
+		slider.style.right = `${width}vw`
+		width -=100; 
 	}
-})
-*/
+}
+
+setInterval(moveRight,10000)
