@@ -19,12 +19,22 @@ body {
 }
 
 /* start of the nav bar */
+.nav-container {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #dbdbdb;
+	z-index: 4;
+}
+
 nav {
+	position: fixed;
 	height: 12vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.2rem;
+	z-index: 1;
+	padding: 0 12.5rem;
 }
 
 .nav-left {
@@ -34,6 +44,11 @@ nav {
 i {
 	margin: auto;
 	padding-right: 1rem;
+}
+
+.coffee-icon {
+	font-size: 2rem;
+	padding-bottom: .5rem;
 }
 
 .nav-middle > ul {
@@ -58,7 +73,7 @@ a {
 
 /* start of the home section*/
 #home {
-	padding: 3rem; 0;
+	padding: 10rem 0 5rem;
 }
 
 .home-container {
@@ -97,14 +112,18 @@ a {
 	line-height: 40px;
 }
 
+.button {
+	transform: skew(-10deg);
+}
+
 button {
 	font-size: 1.25rem; 
-	padding: .5rem; 
+	padding: .5rem 1rem; 
 	background-color: #5d5d5f;  
 	color: #dbdbdb;
-	transform: skew(-10deg);
 	border-radius: 5px;
 	cursor: pointer;
+	border-color: #dbdbdb;
 }
 
 button:hover {
@@ -198,7 +217,7 @@ button:hover {
 #menu {
 	color: #5d5d5f; 
 	text-align: center;
-	padding: 4rem 0;
+	padding: 4rem 0 7rem;
 }
 
 .container > h1 {
@@ -296,9 +315,3 @@ button:hover {
 	line-height: 40px;
 }
 /* end of the events section */
-
-/* start of the reviews section*/
-#reviews {
-	
-}
-/* end of the reviews section */
