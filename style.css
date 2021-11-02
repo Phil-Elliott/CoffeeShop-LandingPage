@@ -58,8 +58,7 @@ a {
 
 /* start of the home section*/
 #home {
-	padding-top: 50px;
-	height: 70vh;
+	padding: 3rem; 0;
 }
 
 .home-container {
@@ -75,6 +74,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	border: 4px solid #5d5d5f;
 }
 
 .right-home {
@@ -88,8 +88,8 @@ a {
 
 .right-home > h1 {
 	font-size: 3rem;
-	line-height: 70px;
-	
+	line-height: 80px;
+	text-align: center;
 }
 
 .right-home > p {
@@ -100,7 +100,6 @@ a {
 
 /* start of the about section*/
 #about {
-	height: 70vh;
 	background-color: #5d5d5f;
 	color: #dbdbdb;
 }
@@ -122,6 +121,7 @@ a {
 
 .left-about > h2 {
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .left-about > p {
@@ -136,15 +136,49 @@ a {
 	object-fit: cover;
 	display: block;
 	margin: 4rem auto 0 auto;
+	border: 3px solid #dbdbdb;
 }
 /* end of top part of about section*/
 
+/* start of bottom part of about section*/
+.bottom-about-container {
+	padding: 4rem 0; 
+}
 
+.bottom-about-container > h3 {
+	text-align: center;
+	font-size: 3rem;
+}
 
+.pics {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+}
+
+.pics > div > img {
+	width: 75%;
+	height: 50vh;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #dbdbdb;
+}
+
+.pics > div > h5 {
+	margin: 1rem 0;
+	font-size: 2rem;
+}
+
+.pics > div > p {
+	width: 75%;
+	text-align: left;
+	text-indent: 30px;
+	margin: 0 auto;
+	font-size: 1.25rem;
+}
+/* end of bottom part of about section*/
 /* end of the about section */
-
-
-
 
 /* start of the menu section*/
 #menu {
