@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 * {
 	box-sizing: border-box;
 }
@@ -6,18 +9,22 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	background-color: #dbdbdb;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.body-container {
-	max-width: 80%;
+.container {
+	max-width: 75%;
 	margin: 0 auto;
 }
 
+/* start of the nav bar */
 nav {
-	height: 15vh;
+	height: 12vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 1.2rem;
 }
 
 .nav-left {
@@ -46,3 +53,117 @@ a {
 .nav-right {
 	display: flex;
 }
+/* end of the nav bar */
+
+
+/* start of the home section*/
+#home {
+	padding-top: 50px;
+	height: 70vh;
+}
+
+.home-container {
+	display: grid;
+	grid-template-columns: .8fr 1fr;
+	grid-gap: 4rem;
+}
+
+.left-home > img {
+	width: 80%;
+	height: 60vh;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.right-home {
+	text-align: left;
+	width: 75%;
+	padding-top: 1rem;
+	font-size: 1.25rem;
+	color: #090a0b;
+	margin: 0 auto;
+}
+
+.right-home > h1 {
+	font-size: 3rem;
+	line-height: 70px;
+	
+}
+
+.right-home > p {
+	text-indent: 2rem;
+	line-height: 40px;
+}
+/* end of the home section */
+
+/* start of the about section*/
+#about {
+	height: 70vh;
+	background-color: #5d5d5f;
+	color: #dbdbdb;
+}
+
+/* start of top part of about section*/
+.top-about-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4rem;
+}
+
+.left-about {
+	text-align: left;
+	width: 80%;
+	padding-top: 1rem;
+	font-size: 2rem;
+	margin: 4rem auto 0 auto;
+}
+
+.left-about > h2 {
+	margin-bottom: 0;
+}
+
+.left-about > p {
+	font-size: 1.5rem;
+	line-height: 40px;
+	text-indent: 40px;
+}
+
+.right-about > img{
+	width: 75%;
+	height: 60vh;
+	object-fit: cover;
+	display: block;
+	margin: 4rem auto 0 auto;
+}
+/* end of top part of about section*/
+
+
+
+/* end of the about section */
+
+
+
+
+/* start of the menu section*/
+#menu {
+	
+}
+/* end of the menu section */
+
+
+
+/* start of the events section*/
+#events {
+	
+}
+/* end of the events section */
+
+
+
+/* start of the reviews section*/
+#reviews {
+	
+}
+/* end of the reviews section */
