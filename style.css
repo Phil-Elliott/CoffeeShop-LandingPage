@@ -11,7 +11,7 @@ body {
 	width: 100%;
 	background-color: #dbdbdb;
 	font-family: 'Open Sans', sans-serif;
-	overflow-x: none;
+	overflow-x: hidden;
 }
 
 .container {
@@ -337,9 +337,12 @@ button:hover {
 
 /* start of the reviews section */
 #reviews {
+	position: relative;
 	margin: 0 auto;
 	font-size: 2rem;
 	padding: 5rem 0;
+	overflow-x: hidden;
+	height: 32rem;
 }
 
 .slider {
@@ -348,9 +351,7 @@ button:hover {
 	grid-template-columns: 100vw 100vw 100vw;
 	right: 0;
 	transition: right 1s ease-in-out;
-	z-index: 100;
 	padding-bottom: 5rem;
-	overflow-y: 0;
 }
 
 .review {
