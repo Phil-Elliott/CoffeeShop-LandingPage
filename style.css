@@ -11,6 +11,7 @@ body {
 	width: 100%;
 	background-color: #dbdbdb;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
 
 nav {
 	position: fixed;
-	height: 10vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -350,6 +350,7 @@ button:hover {
 	transition: right 1s ease-in-out;
 	z-index: 100;
 	padding-bottom: 5rem;
+	overflow-y: 0;
 }
 
 .review {
@@ -380,5 +381,133 @@ button:hover {
 	margin: auto 0;
 	padding-right: 1rem;
 }
-
 /* end of the reviews section */
+
+/* Make the website responsive */
+@media only screen and (max-width: 1300px) {
+
+.container {
+	max-width: 90%;
+}
+
+nav {
+	padding: 0 3rem;
+}
+
+.menu {
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+}
+
+.sizes > p {
+	display: none;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+nav {
+	position: relative;
+	display: inherit;
+	font-size: 1.5rem;
+	padding: 0;
+}
+
+.nav-left {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-icon {
+	margin: auto 0;
+	padding-right: 1rem;
+}
+
+.coffee-icon {
+	font-size: 2rem;
+	padding-bottom: .5rem;
+}
+
+.nav-middle > ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.nav-middle > ul > li {
+	padding: 0 1rem;
+}
+
+.active {
+	font-weight: bold;
+}
+
+.nav-right {
+	display: flex;
+	justify-content: center;
+}
+
+#home {
+	padding: 0 0 3rem;
+}
+
+.home-container {
+	grid-template-columns: 1fr;
+	grid-gap: 0rem;
+}
+
+.left-home > img {
+	display: none;
+}
+
+.top-about-container {
+	grid-template-columns: 1fr;
+	grid-gap: 0rem;
+}
+
+.right-about > img{
+	display: none;
+}
+
+.pics {
+	grid-template-columns: 1fr;
+	text-align: center;
+	grid-gap: 2rem;
+}
+
+.menu {
+	grid-template-columns: 1fr;
+	grid-gap: 5rem;
+}
+
+.area-container {
+	grid-template-columns: 1fr;
+	grid-gap: 0rem;
+}
+
+.left-area > img {
+	display: none;
+}
+
+.review {
+	width: 90%;
+	background-color: #5d5d5f;
+	color: #dbdbdb;
+	padding: 2rem 2rem 0;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+}
+
+@media only screen and (max-width: 450px) {
+
+nav {
+	font-size: 1rem;
+}
+
+.sizes > p {
+	display: inherit;
+}
+
+}
